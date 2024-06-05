@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Personal Finance Management Microservice Project v2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Personal Finance Management is a comprehensive application designed to help users efficiently manage their personal finances. The application provides features such as expense tracking, currency conversion, and viewing historical currency rates, making it easier for users to keep track of their spending, make informed financial decisions, and stay updated with currency fluctuations.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Features](#features)
+- [Microservices](#microservices)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [License](#license)
+- [Contributors](#contributors)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Expense Management**:
+   - Add new expenses with details such as amount, category, description, currency, and an optional email for alerts.
+   - View all expenses in a tabular format.
+   - Edit existing expenses.
+   - Delete unnecessary expense entries.
+   - Receive email notifications for added expenses.
 
-### `npm test`
+2. **Currency Conversion**:
+   - Convert amounts from one currency to another using the latest conversion rates.
+   - Simple input form to enter the amount, base currency, and target currency.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Viewing Historical Rates**:
+   - View historical currency rates for a given date and base currency.
+   - Option to receive historical rates via email.
 
-### `npm run build`
+## Microservices
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project uses a microservice architecture with the following services:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Expense Service**:
+   - Handles the addition, viewing, editing, and deletion of expenses.
+   - Sends email alerts using the Email Service.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Email Service**:
+   - Sends email notifications for added expenses and historical rates.
 
-### `npm run eject`
+3. **Historical Rates Service**:
+   - Fetches historical currency rates from an external API.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Currency Conversion Service**:
+   - Performs currency conversions using the latest exchange rates from an external API.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Python 3.8+
+- Flask
+- Requests
+- Flask-CORS
+- Axios (for frontend)
+- React (for frontend)
 
-## Learn More
+### Installation
+1. **Run expense_service.py**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Run  email_service.py**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Run historical_rates_service.py**:
 
-### Code Splitting
+4. **Run currency_conversion_service.py**:
+  
+5. **Start the frontend: npm start**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Screenshots
 
-### Analyzing the Bundle Size
+### Screenshot 1
+![Screenshot 1](screenshots/psm1.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Screenshot 2
+![Screenshot 2](screenshots/psm2.png)
 
-### Making a Progressive Web App
+### Screenshot 3
+![Screenshot 3](screenshots/psm3.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Screenshot 4
+![Screenshot 4](screenshots/psm4.png)
 
-### Advanced Configuration
+### Screenshot 5
+![Screenshot 5](screenshots/psm5.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Screenshot 6
+![Screenshot 6](screenshots/psm6.png)
 
-### Deployment
+### Note
+Need to add your own email and password to email_service.py and currencyapi.com key to historical_rates_service.py
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
