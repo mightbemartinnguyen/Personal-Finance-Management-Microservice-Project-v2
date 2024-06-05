@@ -90,5 +90,6 @@ This project uses a microservice architecture with the following services:
 ![Screenshot 6](screenshots/psm6.png)
 
 ### Note
-Need to add your own email and password to email_service.py and currencyapi.com key to historical_rates_service.py
+- Need to add your own email and password to email_service.py and currencyapi.com key to historical_rates_service.py
+- Add your own cluster from MongoDB
 
