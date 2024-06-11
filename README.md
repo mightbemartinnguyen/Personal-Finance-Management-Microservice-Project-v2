@@ -19,6 +19,7 @@ Personal Finance Management is a comprehensive application designed to help user
    - Add new expenses with details such as amount, category, description, currency, and an optional email for alerts.
    - View all expenses in a tabular format.
    - Edit existing expenses.
+   - Expenses are stored in MongoDB
    - Delete unnecessary expense entries.
    - Receive email notifications for added expenses.
 
@@ -36,6 +37,7 @@ This project uses a microservice architecture with the following services:
 
 1. **Expense Service**:
    - Handles the addition, viewing, editing, and deletion of expenses.
+   - Expenses stored on MongoDB
    - Sends email alerts using the Email Service.
 
 2. **Email Service**:
@@ -57,6 +59,7 @@ This project uses a microservice architecture with the following services:
 - Flask-CORS
 - Axios (for frontend)
 - React (for frontend)
+- MongoDB
 
 ### Installation
 1. **Run expense_service.py**:
