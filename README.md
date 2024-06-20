@@ -2,7 +2,7 @@
 
 ## Overview
 
-Personal Finance Management is a comprehensive application designed to help users efficiently manage their personal finances. The application provides features such as expense tracking, currency conversion, and viewing historical currency rates, making it easier for users to keep track of their spending, make informed financial decisions, and stay updated with currency fluctuations.
+Personal Finance Management is a comprehensive application designed to help users manage their finances efficiently. The application provides features such as expense tracking, currency conversion, and viewing historical currency rates, making it easier for users to keep track of their spending, make informed financial decisions, and stay updated with currency fluctuations.
 
 ## Table of Contents
 
